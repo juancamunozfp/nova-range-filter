@@ -1,9 +1,13 @@
 <template>
     <div>
-        <h3 class="text-sm uppercase tracking-wide text-80 bg-30 p-3">{{ filter.name }}</h3>
+        <h3 class="px-3 text-xs uppercase font-bold tracking-wide">
+          <span>
+            {{ filter.name }}
+          </span>
+        </h3>
 
         <div class="p-2 pl-6 pr-6 pt-8">
-            <VueSlider :value="value"
+            <vue-slider :value="value"
                         :lazy="true"
                         :tooltip="getOption('tooltip') || tooltip"
                         :min="getOption('min') || min"
@@ -20,7 +24,7 @@
 
     export default {
         components: {
-            VueSlider
+            'vue-slider': VueSlider
         },
 
         data() {
