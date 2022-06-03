@@ -19,6 +19,6 @@
     },
     "dependencies": {
         "vue": "^3.0",
-        "vue-slider-component": "^3.2"
+        "vue-slider-component": "next"
     }
 }
